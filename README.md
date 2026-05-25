@@ -3,5 +3,5 @@ My Portfolio Showcase
 
 ## Projects
 
-### Pfm Cgemba Walk App
+### PFMC Gemba Walk App
 - **URL:** https://pfmcgembawalkapp.base44.app
