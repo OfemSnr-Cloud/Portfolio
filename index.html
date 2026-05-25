@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofemsn-Cloud Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 60px;
+            padding-top: 40px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .project-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            color: #667eea;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: opacity 0.3s ease;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #667eea;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.3s ease;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-links {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 OfemSnr-Cloud Portfolio</h1>
+            <p>Data Analytics & Business Intelligence Projects</p>
+        </header>
+
+        <div class="projects-grid">
+            <!-- Maintenance Cost Report Project -->
+            <div class="project-card">
+                <h2>📈 Maintenance Cost Report</h2>
+                <p>
+                    A comprehensive Power BI dashboard analyzing maintenance costs, trends, and insights. 
+                    This interactive report provides real-time visualization of maintenance metrics and KPIs 
+                    for better decision-making and cost optimization.
+                </p>
+                <div class="tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Data Analytics</span>
+                    <span class="tag">Dashboard</span>
+                    <span class="tag">Business Intelligence</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://app.powerbi.com/groups/me/reports/f039d32d-4df1-4ca4-934a-b0010ca4611d?pbi_source=desktop" class="btn" target="_blank">
+                        View Report
+                    </a>
+                    <a href="https://github.com/OfemSnr-Cloud/Portfolio/blob/main/Maintenance%20Cost%20Report%20-%20Updated.pbix" class="btn btn-secondary" target="_blank">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Portfolio Repository -->
+            <div class="project-card">
+                <h2>🗂️ Portfolio Repository</h2>
+                <p>
+                    This portfolio repository showcases my projects, reports, and data analysis work. 
+                    It serves as a central hub for all my professional projects and analytics demonstrations.
+                </p>
+                <div class="tags">
+                    <span class="tag">GitHub</span>
+                    <span class="tag">Portfolio</span>
+                    <span class="tag">Projects</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/OfemSnr-Cloud/Portfolio" class="btn" target="_blank">
+                        View Repository
+                    </a>
+                </div>
+            </div>
+
+            <!-- Placeholder for Future Project -->
+            <div class="project-card">
+                <h2>🚀 Coming Soon</h2>
+                <p>
+                    More exciting projects and analytics dashboards coming soon! 
+                    Stay tuned for additional reports and data visualizations.
+                </p>
+                <div class="tags">
+                    <span class="tag">In Progress</span>
+                    <span class="tag">Analytics</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn" style="opacity: 0.5; cursor: not-allowed;">
+                        Coming Soon
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 OfemSnr-Cloud. All rights reserved.</p>
+            <div>
+                <a href="https://github.com/OfemSnr-Cloud" target="_blank">GitHub</a>
+                <a href="https://github.com/OfemSnr-Cloud/Portfolio" target="_blank">Portfolio</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
